@@ -1,0 +1,10 @@
+services:
+  web:
+    image: node:22.9.0
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    ports:
+      - 3000:3000
+    user: node
+    tty: true
